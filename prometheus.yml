@@ -1,0 +1,4 @@
+scrape_configs:
+  - job_name: 'beyla_testapi'
+    static_configs:
+      - targets: ['autoinstrumenter_testapi:9091']
