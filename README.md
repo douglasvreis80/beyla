@@ -50,3 +50,68 @@ services:
     volumes:
       - ./prometheus.yml:/etc/prometheus/prometheus.yml
 
+## Setup
+
+### Prerequisites
+- **Docker** and **Docker Compose** installed on your machine.
+
+### Steps to Run
+
+### 1. Clone this repository:
+   ```bash
+   git clone https://github.com/username/api-monitoring.git
+   cd api-monitoring
+
+
+### 2. **Start the stack**
+
+```markdown
+### Step 2: Start the stack
+
+After cloning the repository, start the services using Docker Compose:
+
+```bash
+docker-compose up -d
+
+
+### 3. **Verify the services are running**
+
+```markdown
+### Step 3: Verify the services are running
+
+Check if the services are up and running with the following command:
+
+```bash
+docker ps
+
+
+### 4. **Access the services**
+
+```markdown
+### Step 4: Access the services
+
+Once the stack is running, you can access the following services:
+
+- **testapi**: [http://localhost:5070](http://localhost:5070)
+- **Prometheus**: [http://localhost:9090](http://localhost:9090)
+
+### Step 5: Stopping the Services
+
+To stop all running services, use the following command:
+
+```bash
+docker-compose down
+
+
+### 6. **Viewing the logs**
+
+```markdown
+### Step 6: Viewing the logs
+
+If you want to view the logs for all services, use:
+
+```bash
+docker-compose logs
+docker-compose logs testapi
+
+
